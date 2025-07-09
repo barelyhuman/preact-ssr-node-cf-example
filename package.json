@@ -1,0 +1,38 @@
+{
+  "name": "ssr-preact",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently 'pnpm:dev:*'",
+    "dev:js": "nodemon --watch src --ext js,ts,jsx,tsx --ignore dist start.js --start",
+    "dev:css": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/client/styles.css --watch",
+    "build": "pnpm build:js; pnpm build:css",
+    "build:js": "node start.js",
+    "build:css": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/client/styles.css",
+    "cf:dev": "wrangler dev",
+    "start": "node start.js --start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.12.2",
+  "dependencies": {
+    "@mjackson/node-fetch-server": "^0.7.0",
+    "esbuild": "^0.25.6",
+    "esbuild-plugin-node-externals": "^1.0.1",
+    "preact": "^10.26.9",
+    "preact-iso": "^2.9.2",
+    "send": "^1.2.0",
+    "tiny-glob": "^0.2.9",
+    "wrangler": "^4.24.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "concurrently": "^9.2.0",
+    "nodemon": "^3.1.10",
+    "tailwindcss": "^4.1.11",
+    "typescript": "^5.8.3"
+  }
+}

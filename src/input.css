@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+.page-bg {
+  min-height: 100vh;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.page-header {
+  border-bottom: 1px solid #e5e5e5;
+  background: #fff;
+  padding-top: 24px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.header-content {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 24px 24px 24px;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 0 0 8px 8px;
+}
+.page-title {
+  font-size: 18px;
+  color: #333;
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+.page-main {
+  flex: 1;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

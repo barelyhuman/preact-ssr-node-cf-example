@@ -1,0 +1,11 @@
+name = "ssr-preact"
+workers_dev = false
+compatibility_date = "2025-07-05"
+main = "./dist/worker-entry.js"
+
+[assets]
+directory = "./dist/client"
+binding = "ASSETS"
+
+[build]
+command = "npm run build"
