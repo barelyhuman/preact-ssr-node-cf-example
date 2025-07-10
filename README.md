@@ -35,7 +35,7 @@ You can start reading the `start.js` file to figure out how everything ties toge
 
 Once you are done with that, you can move onto reading one of the `-entry.{tsx,js,jsx}` file to understand how we serve, render, and hydrate the HTML. 
 
-I'll write a more detailed tutorial in a few days on [https://reaper.is](https://reaper.is)
+You can read a detailed tutorial about this on [https://reaper.is/writing/20250710-another-one-about-build-setups-part-i](https://reaper.is/writing/20250710-another-one-about-build-setups-part-i)
 
 
 ## License 
